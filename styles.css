@@ -1,6 +1,6 @@
 body {
   background: #333;
-  padding-top: 150px;
+  padding-top: 350px;
 }
 
 .present {
@@ -12,10 +12,15 @@ img{
   width: 301px;
   height: 200px;
   margin: 0 auto;
-  border-radius: 6px 6px;
+  border-radius: 10px 10px;
 
 
 }
+
+/* img-div {
+  border-radius: 10px 10  px;
+
+} */
 
 .box {
   background:
@@ -106,5 +111,5 @@ img{
   left: 30px;
 }
 .present:hover .promo {
-  top: -130px;
+  top: -170px;
 }
