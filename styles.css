@@ -1,0 +1,108 @@
+body {
+  background: #333;
+  padding-top: 150px;
+}
+
+.present {
+  width: 410px;
+  margin: 0 auto;
+}
+
+img{
+  width: 300px;
+  height: 200px;
+  margin: 0 auto;
+
+}
+
+.box {
+  background:
+    -webkit-radial-gradient(white 15%, transparent 15.1%),
+    -webkit-radial-gradient(white 15%, transparent 15.1%),
+  rgb(240, 58, 58);
+  background-position: 1 100, 25px 25px;
+  background-size: 50px 50px;
+  position: relative;
+  margin: 0 auto;
+  padding: 0 auto;
+  border-radius: 1px 1px 10px 10px;
+
+}
+.lid {
+  background:
+    -webkit-radial-gradient(white 15%, transparent 15.1%),
+    -webkit-radial-gradient(white 15%, transparent 15.1%),
+  rgb(240, 58, 58);
+  background-position: 1 100, 25px 25px;
+  background-size: 50px 50px;
+  position: relative;
+  margin: 0 auto;
+  padding: 0 auto;
+  border-radius: 10px 10px 1px 1px;
+}
+.box {
+  width: 400px;
+  height: 250px;
+}
+.lid {
+  width: 400px;
+  height: 70px;
+  box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding: 0 2px;
+  background-color: rgb(216, 52, 52);
+  /* transitions */
+  top: 0;
+  left: 0;
+  transition: 
+    top ease-out 0.5s,
+    left ease-out 0.5s,
+    transform ease-out 0.5s;
+}
+.box span, .lid span {
+  position: absolute;
+  display: block;
+  background: rgba(235, 199, 0, 0.7);
+  box-shadow: 1px 2px 3px rgba(0,0,0,0.1);
+}
+.box span:first-child {
+  width: 100%;
+  height: 60px;
+  top: 80px;
+}
+.box span:last-child, .lid span {
+  width: 60px;
+  height: 100%;
+  left: 170px;
+}
+.lid span {
+  left: 172px;
+}
+.promo {
+  font-size: 30px;
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  position: relative;
+  height: 0;
+  top: 10px;
+  transition: all ease-out 0.7s;
+}
+.promo p {
+  font-size: 24px;
+  margin: 0;
+}
+.promo h2 {
+  font-size: 40px;
+  margin: 0;
+}
+
+/* hover effects */
+.present:hover .lid {
+  top: -130px;
+  transform: rotateZ(15deg);
+  left: 30px;
+}
+.present:hover .promo {
+  top: -130px;
+}
