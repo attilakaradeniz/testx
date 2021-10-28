@@ -1,4 +1,4 @@
-let us = document.getElementById('us');
+let us = document.getElementById("us");
 
 
 function launchWhenReady() {
