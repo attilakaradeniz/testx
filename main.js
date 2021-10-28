@@ -16,7 +16,7 @@ span.style.color = "blue";
 
 document.body.appendChild(span);
 
-span.addEventListener('mousedown', function(e) {
+span.addEventListener('touchstart', function(e) {
     isDown = true;
     offset = [
         span.offsetLeft - e.clientX,
