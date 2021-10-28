@@ -28,7 +28,7 @@ document.addEventListener('mouseup', function() {
     isDown = false;
 }, true);
 
-document.addEventListener('mousemove', function(event) {
+document.addEventListener('touchstart', function(event) {
     event.preventDefault();
     if (isDown) {
         mousePosition = {
