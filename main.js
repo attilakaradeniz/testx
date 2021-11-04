@@ -51,15 +51,18 @@ function iterate() {
 }
 
 function changeImage() {
-    if(photoCounter >21){
-        photoCounter = 1;
-    }
+   
+    photoCounter = getRandomInt(2, 20);
     photoCounter++;
     photoString = `./img/${photoCounter}.jpg`;
     document.getElementById("photo").src=photoString;
-    
-
-    
+      
 
 }
+
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min +1));
+}
+
+
 
