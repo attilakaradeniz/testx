@@ -125,3 +125,7 @@ border-radius: 10px 10px 10px 10px;
 .present:hover .promo {
   top: -130px;
 }
+
+.tapme {
+  background-color: cornflowerblue;
+}
