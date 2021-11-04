@@ -8,8 +8,8 @@ let photoString = "";
  span = document.createElement("span");
  span.className += "testus";
 span.style.position = "absolute";
-span.style.left = "70";
-span.style.top = "100px";
+span.style.left = "170";
+span.style.top = "500px";
 span.style.width = "100px";
 span.style.height = "100px";
 span.style.background = "ywellow";
@@ -55,3 +55,4 @@ function changeImage() {
     photoString = `${photoCounter}.jpg`;
     document.getElementById("photo").src=photoString;
 }
+
