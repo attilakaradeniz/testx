@@ -51,6 +51,9 @@ function iterate() {
 }
 
 function changeImage() {
+    if(photoCounter >21){
+        photoCounter = 1;
+    }
     photoCounter++;
     photoString = `./img/${photoCounter}.jpg`;
     document.getElementById("photo").src=photoString;
