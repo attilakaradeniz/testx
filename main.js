@@ -51,9 +51,12 @@ function iterate() {
 }
 
 function changeImage() {
-    
     photoCounter++;
-    photoString = `${photoCounter}.jpg`;
+    photoString = `./img/${photoCounter}.jpg`;
     document.getElementById("photo").src=photoString;
+    
+
+    
+
 }
 
