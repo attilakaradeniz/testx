@@ -1,12 +1,15 @@
 let mousePosition;
-let offset = [0,0];
+let offset = [0, 0];
 let span;
 let isDown = false;
 let photoArray = [0, 1, 2, 3];
 let photoCounter = 0;
 let photoString = "";
- span = document.createElement("span");
- span.className += "testus";
+
+let toggleSwitch = 1;
+
+span = document.createElement("span");
+span.className += "testus";
 span.style.position = "absolute";
 span.style.left = "890";
 span.style.top = "600px";
@@ -17,7 +20,7 @@ span.style.color = "blue";
 
 document.body.appendChild(span);
 
-span.addEventListener('mousedown', function(e) {
+span.addEventListener('mousedown', function (e) {
     isDown = true;
     offset = [
         span.offsetLeft - e.clientX,
@@ -25,21 +28,21 @@ span.addEventListener('mousedown', function(e) {
     ];
 }, true);
 
-document.addEventListener('mouseup', function() {
+document.addEventListener('mouseup', function () {
     isDown = false;
 }, true);
 
-document.addEventListener('mousemove', function(event) {
+document.addEventListener('mousemove', function (event) {
     event.preventDefault();
     if (isDown) {
         mousePosition = {
 
-            x : event.clientX,
-            y : event.clientY
+            x: event.clientX,
+            y: event.clientY
 
         };
         span.style.left = (mousePosition.x + offset[0]) + 'px';
-        span.style.top  = (mousePosition.y + offset[1]) + 'px';
+        span.style.top = (mousePosition.y + offset[1]) + 'px';
     }
 }, true);
 
@@ -51,18 +54,36 @@ function iterate() {
 }
 
 function changeImage() {
-   
+
     photoCounter = getRandomInt(2, 20);
     photoCounter++;
     photoString = `./img/${photoCounter}.jpg`;
-    document.getElementById("photo").src=photoString;
-      
+    document.getElementById("photo").src = photoString;
+
 
 }
 
 function getRandomInt(min, max) {
-    return Math.floor(Math.random() * (max - min +1));
+    return Math.floor(Math.random() * (max - min + 1));
 }
 
+function toggleIterate() {
+
+    if (toggleSwitch != 0) {
+        clearInterval(myFunc);
+        myFunc = setInterval(changeImage, 300);
+        toggleSwitch = 1 - toggleSwitch;
+        console.log("up: ", toggleSwitch)
+
+
+
+    } else 
+     {
+        clearInterval(myFunc);
+        toggleSwitch = 1 - toggleSwitch;
+        console.log("down: ", toggleSwitch)
+    }
+
+}
 
 
