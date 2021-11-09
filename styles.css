@@ -130,7 +130,7 @@ border-radius: 10px 10px 10px 10px;
 
 #start {
   margin: auto;
-  
+  width: 50px;
   color:rgb(243, 234, 234);
   background:rgb(69, 192, 20);
   box-shadow: 0 0 5px -1px rgba(0,0,0,0.2);
@@ -152,7 +152,7 @@ border-radius: 10px 10px 10px 10px;
 
 #stop {
   margin: auto;
-  
+  width: 50px;
   color:rgb(230, 217, 217);
   background:rgb(228, 12, 12);
   box-shadow: 0 0 5px -1px rgba(0,0,0,0.2);
