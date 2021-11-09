@@ -1,22 +1,24 @@
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CSS</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  
+
   <div class="present">
     <div class="lid">
       <span></span>
     </div>
     <div class="promo">
-<!-- <div class="img-div"> -->
-  <!-- <img src="16324016477937004343183007301642.jpg" alt=""> -->
-  <img id="photo" src="./img/20.jpg" alt="" onclick="toggleIterate()">
- 
-   <!-- </div> -->
+      <!-- <div class="img-div"> -->
+      <!-- <img src="16324016477937004343183007301642.jpg" alt=""> -->
+      <img id="photo" src="./img/20.jpg" alt="" onclick="toggleIterate()">
+
+      <!-- </div> -->
 
 
       <!-- <p>20% off promo</p>
@@ -26,19 +28,26 @@
       <span></span>
       <span></span>
     </div>
+
+    <br>
+    <div id="start" onclick="iterate()">
+      <p>START</p>
+    </div>
+    <br>
+    <br>
+
+    <div id="stop" onclick="clearInterval(myFunc)">
+      <p> &nbsp; STOP &nbsp;</p>
+    </div>
   </div>
   <br>
   <br>
-<div id="start" class="tapme" onclick="iterate()" style="background-color: aquamarine;"> Hadi aç <br /> <br> Kutuya dokun </div>
-<br>
-<br>
-<br>
-<br>
-<div id="stop" onclick="clearInterval(myFunc)" style="background-color: blueviolet;"><p>TESTTTTT <br><br><br></p> </div>
 
-<script src="./main.js"></script>
-<script src="./mobile.js"></script>
-  
+
+  <script src="./main.js"></script>
+  <script src="./mobile.js"></script>
+
 
 </body>
+
 </html>
